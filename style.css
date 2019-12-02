@@ -1,0 +1,264 @@
+
+  body{
+    margin: 0px;
+  }
+
+    #showcase{
+        margin-top:0px;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('./bg.jpg');
+
+    }
+
+    .modal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      background-color: rgba(0,0,0,.4);
+
+    }
+    .modal-body {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      max-width: 440px;
+      width: calc(100% - 40px);
+      padding: 44px;
+      margin-bottom: 28px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      min-width: 320px;
+      min-height: 338px;
+      overflow: hidden;
+    }
+    .modal-content {
+      padding:0px;
+      position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    }
+
+    @-webkit-keyframes autofill {
+    to {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+    input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    padding-left: 0;
+    border-color: rgba(0,0,0,0.6);
+    height: 36px;
+    width: 100% !important;
+    max-width: 100% !important;
+    outline: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border-color: rgba(0,0,0,0.4);
+    background-color: rgba(255,255,255,0.4);
+    height: 36px;
+    outline: none !important;
+    outline-color: initial !important;
+    outline-style: none !important;
+    outline-width: initial !important;
+    max-width: 100%;
+
+    
+}
+
+
+
+.btn, button, input[type="button"], input[type="submit"], input[type="reset"] {
+    display: inline-block;
+    min-width: 100px;
+    padding: 4px 12px 4px 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    touch-action: manipulation;
+    color: #000;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    background-color: rgba(0,0,0,0.2);
+    border-color: #0067b8;
+    background-color: #0067b8;
+    color: #fff;
+    height: 32px;
+    -webkit-appearance: button;
+    cursor: pointer;
+    outline: none !important;
+    outline-color: initial !important;
+    outline-style: none !important;
+    outline-width: initial !important;
+    max-width: 100%;
+   
+}
+
+a:link{
+  color: #0067b8;
+}
+
+a:visited{
+      color: #0067b8;
+}
+
+a{
+  color: #ccc;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+    
+
+    .text-title {
+    color: #404040;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+}
+    
+    .formdiv{
+        font-family: "Segoe UI","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    }
+
+.progress-container {
+    width: 100%;
+    position: relative;
+    /*background-color: red;*/
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.progress>div {
+    -webkit-animation: progressDot 2s infinite;
+    -moz-animation: progressDot 2s infinite;
+    -o-animation: progressDot 2s infinite;
+    animation: progressDot 2s infinite;
+}
+
+.progress>div {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #0067b8;
+    z-index: 100;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.dot:hover {
+    height: 25px;
+    width: 25px;
+    background-color: rgba(187, 187, 187, .2);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.progress>div:nth-child(1) {
+    -webkit-animation-delay: .05s;
+    -moz-animation-delay: .05s;
+    -o-animation-delay: .05s;
+    animation-delay: .05s;
+}
+
+.progress>div:nth-child(2) {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -o-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.progress>div:nth-child(3) {
+    -webkit-animation-delay: .35s;
+    -moz-animation-delay: .35s;
+    -o-animation-delay: .35s;
+    animation-delay: .35s;
+}
+
+.progress>div:nth-child(4) {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    -o-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.progress>div:nth-child(5) {
+    -webkit-animation-delay: .65s;
+    -moz-animation-delay: .65s;
+    -o-animation-delay: .65s;
+    animation-delay: .65s;
+}
+
+@keyframes progressDot{
+  0%, 20% {left: 0; animation-timing-function: ease-out; opacity: 0;}
+  25% { opacity: 1;}
+  35% { left: 45%; animation-timing-function: linear;}
+  65% { left: 60%; animation-timing-function: ease-in;}
+  75% { opacity: 1;}
+  80%, 100% {left: 100%; opacity: 0;}
+}
+
+.alert-error {
+    color: #e81123;
+    width: 100%;
+    text-align: left;
+    margin-left: -20px;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    font-weight: 400;
+    font-size: .8999rem;
+    line-height: 1.25rem;
+    
+}
+
+
